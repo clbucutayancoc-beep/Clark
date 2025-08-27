@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Everyone</title>
+    <script>
+        function greetEveryone() {
+            const names = ["Maam Archieliz", "Group1",];
+            const greetingContainer = document.getElementById("greetings");
+            names.forEach(name => {
+                const greeting = document.createElement("p");
+                greeting.textContent = `Hello, ${name}!`;
+                greetingContainer.appendChild(greeting);
+            });
+        }
+    </script>
+</head>
+<body onload="greetEveryone()">
+    <h1>Greetings</h1>
+    <div id="greetings"></div>
+</body>
+</html>
